@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.image_logo_nav {
+    width: 400px;
+    height: 200px;
+    background: url('/assets/img/pasion_ferretera.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+}
+
+.fa-xmark {
+    position: absolute;
+    color: black;
+    top: 20px;
+    font-size: 3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    padding: 30px;
+    border: 1px solid black;
+    width: 70%;
+}
+
+.container_home {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.start_home {
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/img/women.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.image_one {
+    
+}
+
+.characts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.logo_charact {
+  min-width: 70px;
+  height: 50px;
+  background: url('../assets/svg/drop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.charact_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  max-width: 500px;
+  min-height: 100px;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 10px;
+  box-shadow: -7px 9px 7px 5px rgba(0, 0, 0, 0.201);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.charact_card p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 450;
+  font-size: 1.1rem;
+}
+
+.charact_card:nth-child(2) .logo_charact {
+  background: url(../assets/svg/premio.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.charact_card:nth-child(3) .logo_charact {
+  background: url(../assets/svg/delivery-man.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.charact_card:nth-child(4) .logo_charact {
+  background: url(../assets/svg/call.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.charact_card:nth-child(5) .logo_charact {
+  background: url(../assets/svg/credit.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.colabs {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.colabs h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+}
+
+.colabs_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card_colab {
+  width: 320px;
+  height: 200px;
+  background: url('../assets/img/aliados_exclusive/accel.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-snap-align: center;
+  border-bottom: 1px solid black;
+}
+
+.card_colab:nth-child(2) {
+  background: url('../assets/img/aliados_exclusive/atlantis.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_colab:nth-child(3) {
+  background: url('../assets/img/aliados_exclusive/fullwat.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_colab:nth-child(4) {
+  background: url('../assets/img/aliados_exclusive/masso.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brand_allies {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card_brand_allies {
+  min-width: 300px;
+  height: 300px;
+  background: url('../assets/img/aliados.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 150px;
+}
+
+.news h1 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.news a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 134, 0.798));
+}
+
+.promos {
+  text-align: center;
+}
+
+.more_promos {
+  text-align: center;
+}
+
+.scroll_container_promo {
+  width: 100vw;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card_promo {
+  min-width: 320px;
+  height: 420px;
+  border-radius: 20px;
+  background: url('../assets/img/promos/Ahorra-Aliados-169x300.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  scroll-snap-align: center;
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.201);
+}
+
+.card_promo:nth-child(2) {
+  background: url('../assets/img/promos/2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  scroll-snap-align: center;
+}
+
+.card_promo:nth-child(3) {
+  background: url('../assets/img/promos/4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  scroll-snap-align: center;
+}
+
+.scroll_container_more_promos {
+  width: 100vw;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.more_promo_card {
+  min-width: 320px;
+  height: 380px;
+  background: url('../assets/img/infaltables/infaltables-bombillo\ e-27.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  scroll-snap-align: center;
+  border-radius: 20px;
+  box-shadow: 1px 20px 20px 6px rgba(0, 0, 0, 0.201);
+}
+
+.more_promo_card:nth-child(2) {
+  background: url('../assets/img/infaltables/2.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.more_promo_card:nth-child(3) {
+  background: url('../assets/img/infaltables/3.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.more_promo_card:nth-child(4) {
+  background: url('../assets/img/infaltables/4.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.more_promo_card:nth-child(5) {
+  background: url('../assets/img/infaltables/5.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.more_promo_card:nth-child(6) {
+  background: url('../assets/img/infaltables/6.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+footer {
+  background-color: rgb(16, 84, 255);
+  min-height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact_us {
+  width: 100%;
+  border: 1px solid black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_us form > input {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+.contact_card {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.redes_media {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.maps_sedes {
+  width: 100%;
+  border: 1px solid black;
+}
